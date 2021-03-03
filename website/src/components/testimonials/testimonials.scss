@@ -1,0 +1,34 @@
+@mixin xs {
+  @media (min-width: 0px) and (max-width: 769px) {
+    @content;
+  }
+}
+
+.cardsContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.quote svg {
+  fill: #54bf72;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.slick-slide.slick-center  {
+  opacity: 1;
+}
+.slick-slide {
+  transition: opacity 0.3s;
+  opacity: 0.4;
+}
+.slick-slide * :focus,.slick-slide * :active{
+    outline: rgba(0,0,0,0);
+}
+
+@include xs{
+  .p3-at-xs{
+    padding-left: 1.5rem;
+    }
+  }

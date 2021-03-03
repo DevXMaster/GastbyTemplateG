@@ -1,0 +1,29 @@
+@mixin xs {
+    @media (min-width: 0px) and (max-width: 769px) {
+      @content;
+    }
+  }
+
+footer{
+    *,p{
+        color: #908989;
+        font-size: 0.75rem;
+        @include xs{
+            font-size: 0.95rem;
+        }
+    }
+    .footer-heading{
+        font-family: Roboto;
+        font-weight: bold;
+        color: #CCCECF;
+        margin-bottom: 0.3rem;
+    }
+    .footer-icon{
+        stroke: #EC9A16;
+        color: #EC9A16;
+    }
+    a:hover{
+        text-decoration: none;
+        color: #CCCECF ;
+    }
+}
