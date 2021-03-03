@@ -9,16 +9,17 @@ const PageAnimation = props => {
         defaultStyle={{
           transition: "opacity 300ms ease-out,  top 250ms ease-out",
           top: "-2%",
-          opacity: "0%",
+          opacity: "100%",
           position: "absolute",
           width: "100%",
         }}
         transitionStyles={{
-          entering: { top: "-2%", opacity: "0%" },
+          entering: { top: "-2%", opacity: "1%" },
           entered: { top: "0%", opacity: "100%" },
-          exiting: { top: "5%", opacity: "0%" },
+          exiting: { top: "0%", opacity: "100%" },
+          exited:  { top: "0%",opacity: "0%" },
         }}
-        transitionTime={400}
+        transitionTime={270}
       >
         {props.children}
       </PageTransition>
