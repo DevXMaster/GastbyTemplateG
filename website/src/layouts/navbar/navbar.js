@@ -113,6 +113,10 @@ const Header = ({
                     <AnchorLink to="/#contact">Contact</AnchorLink>
                     <div className="nav-line-decoration"></div>
                   </div>
+
+                  <div className='nav-item'>
+                    <Link to='page2'>Page 2</Link>
+                  </div>
                 </div>
               </div>
             </nav>
